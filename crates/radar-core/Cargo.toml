@@ -1,0 +1,10 @@
+[package]
+name = "radar-core"
+description = "Shared models, geo maths, Kurdistan atlas and aviation lookup tables for Kurdistan SkyRadar"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true

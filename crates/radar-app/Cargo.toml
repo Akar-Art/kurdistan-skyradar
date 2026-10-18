@@ -1,0 +1,31 @@
+[package]
+name = "radar-app"
+description = "Kurdistan SkyRadar Standalone PC Airspace C2 Application & WebAssembly Client"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+radar-core.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+egui = "0.36"
+eframe = { version = "0.36", default-features = false, features = ["glow", "default_fonts", "web_screen_reader"] }
+walkers = { version = "0.61", default-features = false }
+ehttp = "0.7"
+log = "0.4"
+wasm-bindgen-futures = "0.4"
+
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+env_logger = "0.11"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "time"] }
+reqwest = { version = "0.13", features = ["json"] }
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+wasm-bindgen = "0.2"
+web-sys = { version = "0.3", features = ["Document", "Window", "HtmlCanvasElement", "Element"] }
+console_error_panic_hook = "0.1"
+console_log = "1"

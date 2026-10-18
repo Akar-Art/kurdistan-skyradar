@@ -1,0 +1,14 @@
+# Rust artifacts
+/target/
+crates/radar-app/dist/
+
+# Python / bytecode
+__pycache__/
+*.pyc
+
+# OS & Editor
+Thumbs.db
+.DS_Store
+.idea/
+.vscode/
+*.swp

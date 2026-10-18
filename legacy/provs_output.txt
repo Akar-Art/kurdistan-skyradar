@@ -1,0 +1,12 @@
+=== TUR (81 provinces) ===
+['Adana', 'Adıyaman', 'Afyonkarahisar', 'Ağrı', 'Amasya', 'Antalya', 'Artvin', 'Aydın', 'Balıkesir', 'Ankara', 'Aksaray', 'Ardahan', 'Bartın', 'Batman', 'Bayburt', 'Bilecik', 'Bingöl', 'Bitlis', 'Bolu', 'Burdur', 'Bursa', 'Çanakkale', 'Çankırı', 'Çorum', 'Denizli', 'Diyarbakır', 'Düzce', 'Edirne', 'Elazığ', 'Erzincan', 'Erzurum', 'Eskişehir', 'Gaziantep', 'Giresun', 'Gümüşhane', 'Hakkâri', 'Hatay', 'Iğdır', 'Isparta', 'İstanbul', 'İzmir', 'Kahramanmaraş', 'Karabük', 'Karaman', 'Kars', 'Kastamonu', 'Kayseri', 'Kilis', 'Kırıkkale', 'Kırklareli', 'Kırşehir', 'Kocaeli', 'Konya', 'Kütahya', 'Malatya', 'Manisa', 'Mardin', 'Mersin', 'Muğla', 'Muş', 'Nevşehir', 'Niğde', 'Ordu', 'Osmaniye', 'Rize', 'Sakarya', 'Samsun', 'Siirt', 'Sinop', 'Sivas', 'Tekirdağ', 'Tokat', 'Trabzon', 'Tunceli', 'Uşak', 'Van', 'Yalova', 'Yozgat', 'Zonguldak', 'Şırnak', 'Şanlıurfa']
+
+=== SYR (14 provinces) ===
+['Damascus', 'Aleppo', 'Rural Damascus', 'Homs', 'Hama', 'Lattakia', 'Idleb', 'Al-Hasakeh', 'Deir-ez-Zor', 'Tartous', 'Ar-Raqqa', "Dar'a", 'As-Sweida', 'Quneitra']
+
+=== IRN (32 provinces) ===
+['Mazandaran', 'North Khorasan', 'Kerman', 'Ilam', 'Lorestan', 'Markazi', 'Chaharmahal and Bakhtiari', 'Kermanshah', 'Hamadan', 'Qazvin', 'Gilan', 'Zanjan', 'Semnan', 'Isfahan', 'Kohgiluyeh and Boyer-Ahmad', 'Kurdistan', 'West Azerbaijan', 'Fars', 'Bushehr', 'Ardabil', 'Golestan', 'Razavi Khorasan', 'South Khorasan', 'Sistan and Baluchestan', 'Qom', 'Alborz', 'East Azerbaijan', 'Yazd', 'Hormozgan', 'Khuzestan', 'Tehran', 'Mazandaran']
+
+=== IRQ (18 provinces) ===
+['Al-Anbar', 'Karbala', 'An-Najaf', 'Babil', 'Baghdad', 'Al-Qadisiyah', 'Al-Muthanna', 'Dhi Qar', 'Al-Basrah', 'Maysan', 'Wasit', 'Ninawa', 'Dohuk', 'Salah al-Din', 'Diyala', 'Kirkuk', 'Erbil', 'Al-Sulaimaniyah']
+

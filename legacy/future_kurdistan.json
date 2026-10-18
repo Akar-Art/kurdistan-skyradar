@@ -1,0 +1,162 @@
+
+
+
+
+<!DOCTYPE html>
+<html 
+      lang="en">
+  <head>
+    <title>
+      
+        uMap - Online map creator
+      
+    </title>
+    <meta charset="utf-8">
+    <meta name="description"
+          content="uMap lets you create maps with OpenStreetMap layers in a minute and embed them in your site.">
+    <meta name="keywords" content="map, umap">
+    
+  
+
+
+
+<link rel="stylesheet"
+      href="/static/umap/vendors/leaflet/leaflet.f18ae622e307.css" />
+<link rel="stylesheet"
+      href="/static/umap/vendors/minimap/Control.MiniMap.min.f5616cda6e8e.css" />
+<link rel="stylesheet"
+      href="/static/umap/vendors/measurable/Leaflet.Measurable.e0d4c475cd42.css" />
+<link rel="stylesheet"
+      href="/static/umap/vendors/fullscreen/leaflet.fullscreen.6dd7f1493d15.css" />
+<link rel="stylesheet" href="/static/umap/vars.2d0384e3de9c.css" />
+<link rel="stylesheet" href="/static/umap/font.abdc7e1f8eb9.css" />
+<link rel="stylesheet" href="/static/umap/base.c47aabe104a4.css" />
+<link rel="stylesheet" href="/static/umap/css/popup.4abfa93c1b72.css" />
+<link rel="stylesheet" href="/static/umap/css/form.b2747bb2fadd.css" />
+<link rel="stylesheet" href="/static/umap/css/icon.9dccf8f5fa62.css" />
+<link rel="stylesheet" href="/static/umap/content.a405f3b19a48.css" />
+<link rel="stylesheet" href="/static/umap/nav.6694118cd97a.css" />
+<link rel="stylesheet" href="/static/umap/map.c06df761ec4c.css" />
+<link rel="stylesheet" href="/static/umap/css/slideshow.da8522a97215.css" />
+<link rel="stylesheet" href="/static/umap/css/contextmenu.8dd5a47e9b7c.css" />
+<link rel="stylesheet" href="/static/umap/css/panel.6386113b8369.css" />
+<link rel="stylesheet" href="/static/umap/css/window.14807e0243cf.css" />
+<link rel="stylesheet" href="/static/umap/css/tooltip.a36b731ab511.css" />
+<link rel="stylesheet" href="/static/umap/css/dialog.1584daef35ed.css" />
+<link rel="stylesheet" href="/static/umap/css/importers.eede1d0d52fc.css" />
+<link rel="stylesheet" href="/static/umap/css/tableeditor.e51ce47ee59d.css" />
+<link rel="stylesheet" href="/static/umap/css/bar.ef4307d7b637.css" />
+<link rel="stylesheet" href="/static/umap/css/browser.be94a512cfdb.css" />
+<link rel="stylesheet" href="/static/umap/theme.6d28e9fc6acb.css" />
+
+
+  
+      <script
+  src="https://js.sentry-cdn.com/7be080984d5b415b88b2628181dbac2a.min.js"
+  crossorigin="anonymous"
+></script>
+<style type="text/css">
+  /* REMOVEME when 3805d7f30851fb39d36119971a3ad54b9579f2ec is released (==2.4.2) */
+  .importers ul [type=button] {
+      line-height: 1rem;
+  }
+  .importers ul [type=button]:before {
+      margin-bottom: var(--gutter);
+  }
+</style>
+
+    
+  
+
+
+<script type="importmap">
+  {
+    "imports": {
+      "@turf/meta": "/static/umap/vendors/turf/meta/index.018aa83fbe3a.js",
+      "@turf/helpers": "/static/umap/vendors/turf/helpers/index.67f292f2a2bb.js",
+      "@turf/flatten": "/static/umap/vendors/turf/flatten/index.880908746691.js",
+      "@turf/invariant": "/static/umap/vendors/turf/invariant/index.81ead8dc1a3b.js",
+      "@turf/distance": "/static/umap/vendors/turf/distance/index.69084e3905ec.js",
+      "@turf/clean-coords": "/static/umap/vendors/turf/clean-coords/index.338d18c7278e.js",
+      "@turf/boolean-point-on-line": "/static/umap/vendors/turf/boolean-point-on-line/index.24acf7733c3a.js",
+      "@turf/boolean-point-in-polygon": "/static/umap/vendors/turf/boolean-point-in-polygon/index.ac13e977adad.js",
+      "@turf/point-to-line-distance": "/static/umap/vendors/turf/point-to-line-distance/index.5ba68ba2a2b8.js",
+      "@turf/nearest-point-on-line": "/static/umap/vendors/turf/nearest-point-on-line/index.d0026dcaeecd.js",
+      "@turf/rhumb-distance": "/static/umap/vendors/turf/rhumb-distance/index.42970f7003bf.js",
+      "point-in-polygon-hao": "/static/umap/vendors/point-in-polygon-hao/index.08c460cda201.js",
+      "robust-predicates": "/static/umap/vendors/robust-predicates/index.605ad297b46f.js",
+      "@turf/flip": "/static/umap/vendors/turf/flip/index.1be4995d8cb7.js",
+      "@turf/clone": "/static/umap/vendors/turf/clone/index.6f06593f436b.js",
+      "@turf/area": "/static/umap/vendors/turf/area/index.a126a2ee58ad.js",
+      "@turf/centroid": "/static/umap/vendors/turf/centroid/index.4953ca750ff1.js",
+      "@turf/length": "/static/umap/vendors/turf/length/index.3d820ef79cbc.js",
+      "@turf/bbox": "/static/umap/vendors/turf/bbox/index.44b7f48ef92a.js",
+      "leaflet": "/static/umap/vendors/leaflet/leaflet-src.esm.0e703c906b6c.js",
+      "ol/": "/static/umap/vendors/ol/",
+      "rbush": "/static/umap/vendors/rbush/index.4d640c6d5a5c.js",
+      "quickselect": "/static/umap/vendors/quickselect/index.1bb301aad985.js",
+      "osm2geojson": "/static/umap/vendors/osm2geojson/index.9e9f388cd926.mjs",
+      "colorbrewer": "/static/umap/vendors/colorbrewer/colorbrewer.f1daa1b2ade1.js",
+      "simple-statistics/": "/static/umap/vendors/simple-statistics/"
+    }
+  }
+</script>
+<script type="module"
+        src="/static/umap/vendors/leaflet/leaflet-src.esm.0e703c906b6c.js"
+        defer></script>
+<script type="module"
+        src="/static/umap/js/modules/leaflet-configure.b0145d0d7af2.js"
+        defer></script>
+<script src="/static/umap/vendors/heat/leaflet-heat.7c49f3d195e1.js" defer></script>
+
+<script src="/static/umap/vendors/editable/Path.Drag.a0809fcb697e.js" defer></script>
+<script src="/static/umap/vendors/editable/Leaflet.Editable.7ba08dd861fd.js" defer></script>
+<script type="module" src="/static/umap/js/modules/global.dbfe361fa2c9.js" defer></script>
+<script src="/static/umap/vendors/minimap/Control.MiniMap.min.4c4b8e7e5ebf.js"
+        defer></script>
+<script src="/static/umap/vendors/csv2geojson/csv2geojson.56594ce16722.js" defer></script>
+<script src="/static/umap/vendors/fullscreen/Leaflet.fullscreen.min.17ff40b18ca8.js"
+        defer></script>
+<script src="/static/umap/vendors/measurable/Leaflet.Measurable.4c788e494421.js"
+        defer></script>
+<script src="/static/umap/vendors/textpath/leaflet.textpath.66511c23e1b2.js"
+        defer></script>
+<script src="/static/umap/js/umap.controls.f338f148bb55.js" defer></script>
+<script type="module" src="/static/umap/js/components/fragment.ed8b45e42041.js" defer></script>
+<script type="module" src="/static/umap/js/components/modal.7f98b8989e86.js" defer></script>
+<script type="module" src="/static/umap/js/components/copiable.ed04e9617914.js" defer></script>
+
+
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
+    
+    <link rel="icon"
+          href="/static/umap/favicons/favicon.d00639428e40.ico"
+          sizes="32x32">
+    <link rel="icon"
+          href="/static/umap/favicons/icon.a93d14e37669.svg"
+          type="image/svg+xml">
+    <link rel="apple-touch-icon"
+          href="/static/umap/favicons/apple-touch-icon.02fdccd547b9.png">
+    <!-- 180×180 -->
+    <link rel="manifest" href="/manifest.webmanifest">
+    
+  </head>
+  <body class="page-40x">
+    
+    
+    
+  <div class="content-40x content-404">
+    <h1>404 Page Not Found</h1>
+    <p><a href="/en/">← Go to the homepage</a></p>
+  </div>
+
+    
+    
+    
+      
+    
+  </body>
+</html>
